@@ -1,14 +1,8 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { instance } from ".";
 
-const categories = () => {
-  return (
-    <View>
-      <Text>categories</Text>
-    </View>
-  )
-}
+const getAllCategories = async () => {
+  const res = await instance.get("");
+  return res.data;
+};
 
-export default categories
-
-const styles = StyleSheet.create({})
+export { getAllCategories };

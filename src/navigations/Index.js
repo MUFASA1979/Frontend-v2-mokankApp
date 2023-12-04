@@ -1,14 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+const ROUTES = {
+    CREATE_ITEM:{
+      CREATE_ITEM_NAVIGATOR:" create item navigator",
+      CREATE_ITEM:"create item"
+    },
+    HOME:{
+      HOME_NAVIGATOR:"home navigator",
+      HOME:"home",
+      ITEM_DETAILS_NAVIGATOR:"item details navigator",
+      ITEM_DETAILS:"item details",
+    },
+    PROFILE:{
+      PROFILE_NAVIGATOR:"profile navigator",
+      PROFILE:"profile",
+      EDIT_PROFILE_NAVIGATOR:"edit profile navigator",
+      EDIT_PROFILE:"edit profile",
+    },
+};
 
-const Index = () => {
-  return (
-    <View>
-      <Text>Index</Text>
-    </View>
-  )
-}
-
-export default Index
-
-const styles = StyleSheet.create({})
+export default ROUTES
